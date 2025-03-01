@@ -1,0 +1,25 @@
+{
+	"name": "bevy-yurrgoht engine",
+	"build": { 
+		"context": "..",
+		"dockerfile": "Dockerfile" 
+	},
+	"mounts": [
+	  "source=${localWorkspaceFolder},target=/workspace,type=bind"
+	],
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"extensions": ["1yib.rust-bundle",
+			"dustypomerleau.rust-syntax",
+			"rust-lang.rust-analyzer",
+			"fill-labs.dependi",
+			"tamasfe.even-better-toml",
+			"ms-azuretools.vscode-docker" ], 
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash", 
+				"overrideCommand": false
+			}
+		}
+	}
+}
